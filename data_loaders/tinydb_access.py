@@ -5,14 +5,18 @@ import logging
 
 
 async def product_data_fetcher(brand, category):
+    try:
+        # Return None if input is None
+        if brand is None or category is None:
+            logging.warning("Brand or category is None. Returning None.")
+            return None
 
-    try:    
         db = TinyDB("data_bases/product_database.json")
         results = db.search((Query().Brand == brand) & (Query().Category == category))
-        logging.info(f"Product data from data base new_product.json{results}")
+        logging.info(f"Product data from product_database.json: {results}")
         return results
+
     except Exception as e:
-        
         raise Exception(f"Error fetching product data: {e}")
 
 

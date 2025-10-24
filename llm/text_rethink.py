@@ -19,10 +19,14 @@ except Exception as e:
 
 async def text_llm_new(text_prompt,product_data,):
     try:
+        product_details = await product_data_fetcher(
+                product_data.get('product'),
+                product_data.get('category')
+            )
+
         
         
         
-        product_details = await product_data_fetcher(product_data['product'],product_data['category'])
 
         # competitor_list = competitor_data_collector(product, competitors, category)
         # location_data, gender_data, locality_data = demographics_data_fetcher(gender, region, urban_or_rural)

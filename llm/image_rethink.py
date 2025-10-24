@@ -39,7 +39,10 @@ async def  image_llm_new(image_prompt,product_info,image):
        
         image_bytes = base64.b64decode(image)
     
-        product_details = await product_data_fetcher(product_info['product'],product_info['category'])
+        product_details = await product_data_fetcher(
+                product_info.get('product'),
+                product_info.get('category')
+            )
 
         # competitor_list = competitor_data_collector(product, competitors, category)
         # location_data, gender_data, locality_data = demographics_data_fetcher(gender, region, urban_or_rural)
