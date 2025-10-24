@@ -39,7 +39,8 @@ async def  image_llm_new(image_prompt,product_info,image):
        
         image_bytes = base64.b64decode(image)
     
-        product_details = await product_data_fetcher("USHINDI","LAUNDRY BAR")
+        product_details = await product_data_fetcher(product_info['product'],product_info['category'])
+
         # competitor_list = competitor_data_collector(product, competitors, category)
         # location_data, gender_data, locality_data = demographics_data_fetcher(gender, region, urban_or_rural)
        
@@ -78,6 +79,7 @@ Create one imaginative and visually striking image prompt that adheres to the fo
   - E.g., laundry soap should appear in actual washing contexts: backyard wash areas, water taps, washing lines — **not in irrelevant places like living rooms or rooftops**.
 - Reflect the creative instruction: **{image_prompt}**
 - Include **authentic emotional cues** (e.g., pride in cleanliness, joy in daily life, family care).
+- The given input image should be exact and nothing should be done on it just place that in the generated image intelligently.
 - Emphasize that the **product itself must not be visually altered** — retain its original appearance.
 - Ensure the visual concept is suitable for **{product_info.get('platform')}** trends and aesthetics.
 

@@ -22,7 +22,8 @@ async def text_llm_new(text_prompt,product_data,):
         
         
         
-        product_details = await product_data_fetcher("USHINDI","LAUNDRY BAR")
+        product_details = await product_data_fetcher(product_data['product'],product_data['category'])
+
         # competitor_list = competitor_data_collector(product, competitors, category)
         # location_data, gender_data, locality_data = demographics_data_fetcher(gender, region, urban_or_rural)
 
