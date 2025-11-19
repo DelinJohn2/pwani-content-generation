@@ -77,7 +77,7 @@ PRODUCT DETAILS:
 TASK:
 Create one imaginative and visually striking image prompt that adheres to the following:
 
-✅ CORE REQUIREMENTS:
+CORE REQUIREMENTS:
 - The product must be shown in a **realistic and culturally accurate usage scenario**.
   - E.g., laundry soap should appear in actual washing contexts: backyard wash areas, water taps, washing lines — **not in irrelevant places like living rooms or rooftops**.
 - Reflect the creative instruction: **{image_prompt}**
@@ -86,16 +86,21 @@ Create one imaginative and visually striking image prompt that adheres to the fo
 - Emphasize that the **product itself must not be visually altered** — retain its original appearance.
 - Ensure the visual concept is suitable for **{product_info.get('platform')}** trends and aesthetics.
 
-🚫 AVOID:
+AVOID:
 - Illogical or trendy scenes disconnected from actual product use.
 - Generic backdrops (e.g., empty streets, plain rooms) that don’t support the product narrative.
 - Overly complicated or abstract imagery.
 
-🎨 VISUAL STYLE GUIDELINES:
+VISUAL STYLE GUIDELINES:
 - Be concise and visual in your description.
 - Use culturally resonant symbols, environments, and emotions.
 - Favor clarity and storytelling over detail overload.
 - Ensure every visual element supports the product’s purpose and message.
+
+MODESTY & APPROPRIATENESS RULE:
+- All people must be shown in culturally appropriate, modest, non-suggestive attire.
+- Avoid any appearance of nudity, sensuality, or exposure — even subtle.
+- If the product context requires towels, bathrobes, or home-wear (e.g., for bath soap), they must be used tastefully, modestly, and non-revealing.
 
 Make sure the image prompt helps users immediately understand **what the product is, how it’s used, and why it matters**, through a meaningful, emotionally resonant visual story.
 """)
